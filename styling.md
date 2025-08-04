@@ -45,6 +45,12 @@ We offer guidelines for both dark and light themes:
 | ![#](https://placehold.co/25/61afef/000000?text=%2B) | base0D | 4 and 12 | Blue and Bright Blue       | Functions, Methods, Attribute IDs, Headings |
 | ![#](https://placehold.co/25/c678dd/000000?text=%2B) | base0E | 5 and 13 | Magenta and Bright Magenta | Keywords, Storage, Selector, Markup Italic, Diff Changed |
 | ![#](https://placehold.co/25/be5046/000000?text=%2B) | base0F | 17       | (Dark Red or Brown)        | Deprecated, Opening/Closing Embedded Language Tags, e.g. `<?php ?>` |
+| ![Colour](https://placehold.co/25/ff7b86/000000?text=%2B) | opt08 | 9    | Bright Red          | NA |
+| ![Colour](https://placehold.co/25/efb074/000000?text=%2B) | opt0A | 11   | Bright Yellow       | NA |
+| ![Colour](https://placehold.co/25/b1e18b/000000?text=%2B) | opt0B | 10   | Bright Green        | NA |
+| ![Colour](https://placehold.co/25/63d4e0/000000?text=%2B) | opt0C | 14   | Bright Cyan         | NA |
+| ![Colour](https://placehold.co/25/67cdff/000000?text=%2B) | opt0D | 12   | Bright Blue         | NA |
+| ![Colour](https://placehold.co/25/e48bff/000000?text=%2B) | opt0E | 13   | Bright Magenta      | NA |
 
 **Notes**:
 

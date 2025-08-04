@@ -58,6 +58,7 @@ We offer guidelines for both dark and light themes:
 - These are just guidelines and will most often provide best results when the they are followed.
 - Items in parenthesis in the Terminal column do not have an identified terminal use and are a more generic color description.
 - Most terminals allow to set extended ANSI colors, but not all. It can't be assumed that the extended ANSI colors are set when using a tinted-theming terminal template theme.
+- opt colors will typically be brighter for dark themes and darker for light themes.
 
 ## YAML scheme examples
 

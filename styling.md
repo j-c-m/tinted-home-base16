@@ -37,15 +37,15 @@ We offer guidelines for both dark and light themes:
 | ![#](https://placehold.co/25/abb2bf/000000?text=%2B) | base05 | 7        | White                      | Default Foreground, Caret, Delimiters, Operators |
 | ![#](https://placehold.co/25/e6e6e6/000000?text=%2B) | base06 | 21       | (Lighter White)            | Light Foreground |
 | ![#](https://placehold.co/25/ffffff/000000?text=%2B) | base07 | 15       | Bright White               | The Lightest Foreground |
-| ![#](https://placehold.co/25/e06c75/000000?text=%2B) | base08 | 1 | Red and Bright Red         | Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted |
+| ![#](https://placehold.co/25/e06c75/000000?text=%2B) | base08 | 1 | Red         | Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted |
 | ![#](https://placehold.co/25/d19a66/000000?text=%2B) | base09 | 16       | (Orange)                   | Integers, Boolean, Constants, XML Attributes, Markup Link Url |
-| ![#](https://placehold.co/25/e5c07b/000000?text=%2B) | base0A | 3 | Yellow and Bright Yellow   | Classes, Markup Bold, Search Text Background |
-| ![#](https://placehold.co/25/98c379/000000?text=%2B) | base0B | 2 | Green and Bright Green     | Strings, Inherited Class, Markup Code, Diff Inserted |
-| ![#](https://placehold.co/25/56b6c2/000000?text=%2B) | base0C | 6 | Cyan and Bright Cyan       | Support, Regular Expressions, Escape Characters, Markup Quotes |
-| ![#](https://placehold.co/25/61afef/000000?text=%2B) | base0D | 4 | Blue and Bright Blue       | Functions, Methods, Attribute IDs, Headings |
-| ![#](https://placehold.co/25/c678dd/000000?text=%2B) | base0E | 5 | Magenta and Bright Magenta | Keywords, Storage, Selector, Markup Italic, Diff Changed |
+| ![#](https://placehold.co/25/e5c07b/000000?text=%2B) | base0A | 3 | Yellow   | Classes, Markup Bold, Search Text Background |
+| ![#](https://placehold.co/25/98c379/000000?text=%2B) | base0B | 2 | Green   | Strings, Inherited Class, Markup Code, Diff Inserted |
+| ![#](https://placehold.co/25/56b6c2/000000?text=%2B) | base0C | 6 | Cyan       | Support, Regular Expressions, Escape Characters, Markup Quotes |
+| ![#](https://placehold.co/25/61afef/000000?text=%2B) | base0D | 4 | Blue       | Functions, Methods, Attribute IDs, Headings |
+| ![#](https://placehold.co/25/c678dd/000000?text=%2B) | base0E | 5 | Magenta | Keywords, Storage, Selector, Markup Italic, Diff Changed |
 | ![#](https://placehold.co/25/be5046/000000?text=%2B) | base0F | 17       | (Dark Red or Brown)        | Deprecated, Opening/Closing Embedded Language Tags, e.g. `<?php ?>` |
-| | | | optional | 1:1 map from base##->opt## if not supplied by scheme
+| | | | optional | sample from base##->opt## if not supplied by scheme
 | ![Colour](https://placehold.co/25/ff7b86/000000?text=%2B) | opt08 | 9    | Bright Red          | NA |
 | ![Colour](https://placehold.co/25/efb074/000000?text=%2B) | opt0A | 11   | Bright Yellow       | NA |
 | ![Colour](https://placehold.co/25/b1e18b/000000?text=%2B) | opt0B | 10   | Bright Green        | NA |
@@ -59,6 +59,7 @@ We offer guidelines for both dark and light themes:
 - Items in parenthesis in the Terminal column do not have an identified terminal use and are a more generic color description.
 - Most terminals allow to set extended ANSI colors, but not all. It can't be assumed that the extended ANSI colors are set when using a tinted-theming terminal template theme.
 - opt colors will typically be brighter for dark themes and darker for light themes.
+- opt colors not specified will be sampled from corresponding base colors and made brighter (0.1) and less saturated (-0.2) for dark themes, the opposite for light themes (-0.1,0.2) respectively.
 
 ## YAML scheme examples
 

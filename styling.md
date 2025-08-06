@@ -46,20 +46,20 @@ We offer guidelines for both dark and light themes:
 | ![#](https://placehold.co/25/c678dd/000000?text=%2B) | base0E | 5 | Magenta | Keywords, Storage, Selector, Markup Italic, Diff Changed |
 | ![#](https://placehold.co/25/be5046/000000?text=%2B) | base0F | 17       | (Dark Red or Brown)        | Deprecated, Opening/Closing Embedded Language Tags, e.g. `<?php ?>` |
 | | | | optional | sample from base##->opt## if not supplied by scheme
-| ![Colour](https://placehold.co/25/ff7b86/000000?text=%2B) | opt08 | 9    | Bright Red          | NA |
-| ![Colour](https://placehold.co/25/efb074/000000?text=%2B) | opt0A | 11   | Bright Yellow       | NA |
-| ![Colour](https://placehold.co/25/b1e18b/000000?text=%2B) | opt0B | 10   | Bright Green        | NA |
-| ![Colour](https://placehold.co/25/63d4e0/000000?text=%2B) | opt0C | 14   | Bright Cyan         | NA |
-| ![Colour](https://placehold.co/25/67cdff/000000?text=%2B) | opt0D | 12   | Bright Blue         | NA |
-| ![Colour](https://placehold.co/25/e48bff/000000?text=%2B) | opt0E | 13   | Bright Magenta      | NA |
+| ![Colour](https://placehold.co/25/ff7b86/000000?text=%2B) | bright08 | 9    | Bright Red          | NA |
+| ![Colour](https://placehold.co/25/efb074/000000?text=%2B) | bright0A | 11   | Bright Yellow       | NA |
+| ![Colour](https://placehold.co/25/b1e18b/000000?text=%2B) | bright0B | 10   | Bright Green        | NA |
+| ![Colour](https://placehold.co/25/63d4e0/000000?text=%2B) | bright0C | 14   | Bright Cyan         | NA |
+| ![Colour](https://placehold.co/25/67cdff/000000?text=%2B) | bright0D | 12   | Bright Blue         | NA |
+| ![Colour](https://placehold.co/25/e48bff/000000?text=%2B) | bright0E | 13   | Bright Magenta      | NA |
 
 **Notes**:
 
 - These are just guidelines and will most often provide best results when the they are followed.
 - Items in parenthesis in the Terminal column do not have an identified terminal use and are a more generic color description.
 - Most terminals allow to set extended ANSI colors, but not all. It can't be assumed that the extended ANSI colors are set when using a tinted-theming terminal template theme.
-- opt colors will typically be brighter for dark themes and darker for light themes.
-- opt colors not specified will be sampled from corresponding base colors and made brighter (0.1) and less saturated (-0.2) for dark themes, the opposite for light themes (-0.1,0.2) respectively.
+- bright colors will typically be brighter for dark themes and darker for light themes.
+- bright colors not specified will be sampled from corresponding base colors and made brighter (0.15) for dark themes, for light themes they will be made darker (-0.2) and saturation increased (0.2).
 
 ## YAML scheme examples
 
@@ -101,6 +101,10 @@ system: "base16"
 name: "Ayu Dark"
 author: "Khue Nguyen <Z5483Y@gmail.com>"
 variant: "dark"
+# optional, adjustment to produce bright## colors
+lightness: 0.15
+saturation: 0.0
+#
 palette:
   base00: "#0f1419" # ---- dark
   base01: "#131721" # ---

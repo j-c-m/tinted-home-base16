@@ -30,28 +30,30 @@ We offer guidelines for both dark and light themes:
 | Color                                              | base0X   | ANSI     | Terminal                   | Text Editor |
 | -------------------------------------------------- | -------  | -------- | -------------------------- | ----------- |
 | ![#](https://placehold.co/25/282c34/000000?text=%2B) | base00 | 0        | Black (Background)         | Default Background |
-| ![#](https://placehold.co/25/3f4451/000000?text=%2B) | base01 | 18       | (Darkest Gray)             | Lighter Background (Used for status bars) |
-| ![#](https://placehold.co/25/4f5666/000000?text=%2B) | base02 | 19       | (Dark Gray)                | Selection Background |
+| ![#](https://placehold.co/25/3f4451/000000?text=%2B) | base01 |        | (Darkest Gray)             | Lighter Background (Used for status bars) |
+| ![#](https://placehold.co/25/4f5666/000000?text=%2B) | base02 |      | (Dark Gray)                | Selection Background |
 | ![#](https://placehold.co/25/545862/000000?text=%2B) | base03 | 8        | Bright Black (Gray)        | Comments, Invisibles, Line Highlighting |
-| ![#](https://placehold.co/25/9196a1/000000?text=%2B) | base04 | 20       | (Light Gray)               | Dark Foreground (Used for status bars) |
+| ![#](https://placehold.co/25/9196a1/000000?text=%2B) | base04 |       | (Light Gray)               | Dark Foreground (Used for status bars) |
 | ![#](https://placehold.co/25/abb2bf/000000?text=%2B) | base05 | 7        | White                      | Default Foreground, Caret, Delimiters, Operators |
-| ![#](https://placehold.co/25/e6e6e6/000000?text=%2B) | base06 | 21       | (Lighter White)            | Light Foreground |
+| ![#](https://placehold.co/25/e6e6e6/000000?text=%2B) | base06 |       | (Lighter White)            | Light Foreground |
 | ![#](https://placehold.co/25/ffffff/000000?text=%2B) | base07 | 15       | Bright White               | The Lightest Foreground |
 | ![#](https://placehold.co/25/e06c75/000000?text=%2B) | base08 | 1 | Red         | Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted |
-| ![#](https://placehold.co/25/d19a66/000000?text=%2B) | base09 | 16       | (Orange)                   | Integers, Boolean, Constants, XML Attributes, Markup Link Url |
+| ![#](https://placehold.co/25/d19a66/000000?text=%2B) | base09 |       | (Orange)                   | Integers, Boolean, Constants, XML Attributes, Markup Link Url |
 | ![#](https://placehold.co/25/e5c07b/000000?text=%2B) | base0A | 3 | Yellow   | Classes, Markup Bold, Search Text Background |
 | ![#](https://placehold.co/25/98c379/000000?text=%2B) | base0B | 2 | Green   | Strings, Inherited Class, Markup Code, Diff Inserted |
 | ![#](https://placehold.co/25/56b6c2/000000?text=%2B) | base0C | 6 | Cyan       | Support, Regular Expressions, Escape Characters, Markup Quotes |
 | ![#](https://placehold.co/25/61afef/000000?text=%2B) | base0D | 4 | Blue       | Functions, Methods, Attribute IDs, Headings |
 | ![#](https://placehold.co/25/c678dd/000000?text=%2B) | base0E | 5 | Magenta | Keywords, Storage, Selector, Markup Italic, Diff Changed |
-| ![#](https://placehold.co/25/be5046/000000?text=%2B) | base0F | 17       | (Dark Red or Brown)        | Deprecated, Opening/Closing Embedded Language Tags, e.g. `<?php ?>` |
+| ![#](https://placehold.co/25/be5046/000000?text=%2B) | base0F |       | (Dark Red or Brown)        | Deprecated, Opening/Closing Embedded Language Tags, e.g. `<?php ?>` |
 | | | | optional | sample from base##->opt## if not supplied by scheme
 | ![Colour](https://placehold.co/25/ff7b86/000000?text=%2B) | bright08 | 9    | Bright Red          | NA |
-| ![Colour](https://placehold.co/25/efb074/000000?text=%2B) | bright0A | 11   | Bright Yellow       | NA |
-| ![Colour](https://placehold.co/25/b1e18b/000000?text=%2B) | bright0B | 10   | Bright Green        | NA |
-| ![Colour](https://placehold.co/25/63d4e0/000000?text=%2B) | bright0C | 14   | Bright Cyan         | NA |
-| ![Colour](https://placehold.co/25/67cdff/000000?text=%2B) | bright0D | 12   | Bright Blue         | NA |
-| ![Colour](https://placehold.co/25/e48bff/000000?text=%2B) | bright0E | 13   | Bright Magenta      | NA |
+| ![Colour](https://placehold.co/25/efb074/000000?text=%2B) | bright09 |    | Bright Orange       | NA |
+| ![Colour](https://placehold.co/25/b1e18b/000000?text=%2B) | bright0A | 11   | Bright Yellow       | NA |
+| ![Colour](https://placehold.co/25/63d4e0/000000?text=%2B) | bright0B | 10   | Bright Green        | NA |
+| ![Colour](https://placehold.co/25/67cdff/000000?text=%2B) | bright0C | 14   | Bright Cyan         | NA |
+| ![Colour](https://placehold.co/25/e48bff/000000?text=%2B) | bright0D | 12   | Bright Blue         | NA |
+| ![Colour](https://placehold.co/25/be5046/000000?text=%2B) | bright0E | 13   | Bright Magenta      | NA |
+| ![Colour](https://placehold.co/25/d46c56/000000?text=%2B) | bright0F |    | Bright Brown        | NA |
 
 **Notes**:
 
@@ -102,8 +104,10 @@ name: "Ayu Dark"
 author: "Khue Nguyen <Z5483Y@gmail.com>"
 variant: "dark"
 # optional, adjustment to produce bright## colors
-lightness: 0.15
-saturation: 0.0
+bright_adj_hsl:
+  hue: 0.0
+  saturation: 0.0
+  lightness: 0.15
 #
 palette:
   base00: "#0f1419" # ---- dark

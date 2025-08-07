@@ -3,13 +3,15 @@ _The original version `0.2` of this spec can be found at [chriskempson/base16](h
 ---
 
 # Base16 Styling Guidelines
-**Version 0.4.2** The latest version of this spec can be obtained from [tinted-theming/styling](https://github.com/tinted-theming/home/blob/main/styling.md)
+**Version 0.0.99-BRIGHT** The latest version of this spec can be obtained from [tinted-theming/styling](https://github.com/tinted-theming/home/blob/main/styling.md)
 
 Base16 aims to group similar language constructs with a single color. For example, floats, ints, and doubles would belong to the same color group. The colors for the default scheme were chosen to be easily separable, but scheme designers should pick whichever colors they desire, e.g. `base0B` (green by default) could be replaced with red. There are, however, some general guidelines below that stipulate which `base0B` should be used to highlight each construct when designing templates for editors.
 
 Since describing syntax highlighting can be tricky, please see [base16-vim](https://github.com/tinted-theming/base16-vim/) and [base16-emacs](https://github.com/tinted-theming/base16-emacs/) for reference. Though it should be noted that each editor will have some discrepancies due the fact that editors generally have different syntax highlighting engines.
 
 Colors `base00` to `base07` are typically variations of a shade and run from darkest to lightest for dark themes. These colors are used for foreground and background, status bars, line highlighting and such. Colors `base08` to `base0F` are typically individual colors used for types, operators, names and variables. In order to create a dark scheme, colors `base00` to `base07` should span from dark to light. For a light scheme, these color should span from light to dark.
+
+The **bright** extension adds 8 bright variants of the existing Base16 colors. The builder will generate any missing bright variants automatically.
 
 ## Usage Guidelines
 

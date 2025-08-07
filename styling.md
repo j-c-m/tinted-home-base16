@@ -61,7 +61,7 @@ We offer guidelines for both dark and light themes:
 - Items in parenthesis in the Terminal column do not have an identified terminal use and are a more generic color description.
 - Most terminals allow to set extended ANSI colors, but not all. It can't be assumed that the extended ANSI colors are set when using a tinted-theming terminal template theme.
 - bright colors will typically be brighter for dark themes and darker for light themes.
-- bright colors not specified will be sampled from corresponding base colors and made brighter (0.15) for dark themes, for light themes they will be made darker (-0.2) and saturation increased (0.2).
+- bright colors not specified will be sampled from corresponding base colors and made brighter (0.25) for dark themes, for light themes they will be made darker (-0.25) and saturation increased (0.25).
 
 ## YAML scheme examples
 
@@ -107,7 +107,7 @@ variant: "dark"
 bright_adj_hsl:
   hue: 0.0
   saturation: 0.0
-  lightness: 0.15
+  lightness: 0.25
 #
 palette:
   base00: "#0f1419" # ---- dark
